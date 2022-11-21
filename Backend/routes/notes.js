@@ -22,7 +22,7 @@ router.post('/addnote', fetchuser, [
    body('description', "Description must be atleast 5 characters").isLength({ min: 5 }),
 ],
    async (req, res) => {
-
+ 
       try {
          const { title, description, tag } = req.body;
          // if there are errors return the bad request and errors
